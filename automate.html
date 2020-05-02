@@ -3,3 +3,6 @@ We will also take help of Jenkins
 We will use Jenkins to clone from SCM(Github)
 We have set Build perodically in jenkins that will help us automate the process of Checking Github and cloning
 <p> Now we have set the Jenkins Scheduler to * * * * * in Poll SCM which means whenever we make changes to the code, Jenkins will clone and copt to the webserver config file in /var/www/html in RHEL8</p>
+<p> We have automated the git push using post-commit event and hooks concept in GiT</p>
+<p>Using Jenkins we have automated the cloning process whenever we update and push the code Jenkins will download </p>
+<p>We also automated the process of copying the html code to the Web Server config file in RHEL8 so the WEBAPP is up-to-date.</p>
